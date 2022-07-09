@@ -9,12 +9,12 @@
 /* HTML and Body Styles */
 
 html {
-    background-color: hsl(0, 100%, 40%);
+    background-color: black;
 }
 
 body {
     color: rgb(254, 14, 254);
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(235, 99%, 19%);
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -23,15 +23,52 @@ body {
     width: 90%;
 }
 
-p {padding: 10px}
 
-footer {
-    color: cornsilk;
-    font: normal small-caps bold 1em/1em
-        'Trebuchet MS', Helvetica, sans-serif;
-    text-align: center;
+body > ul {
+    line-height: 1em;
+    color: hsl(183, 100%, 70%);
 }
 
+body > ol {
+    color: lawngreen;
+    float: right;
+    clear: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+/* Horizontal Navigation Styles */
+
+nav > ul {
+    line-height: 1em;
+    color: aqua;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(266, 100%, 44%);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: hsl(180, 100%, 60%);
+    font-size: x-large;
+    text-decoration: none;
+    padding: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: deeppink;
+}
+
+.active {
+    background-color:#04AA6D;
+}
 
 /* Heading Styles */
 
@@ -39,19 +76,83 @@ h1 {
     font-size: 2em;
     color: midnightblue;
     background-color: greenyellow;
-}
-
-nav > ul {
-    line-height: 1em;
-    color: aqua;
-}
-
-ol {
-    color: lawngreen;
+    text-align: center;
+    padding: 10px;
 }
 
 h3 {
     font-size: 1em;
     color: yellow;
     background-color: green;
+    text-align: left;
+    padding: 10px;
+}
+
+section#Goals {
+    font-size: 1em;
+    text-align: left;
+    padding: 10px;
+}
+
+section#Goals ul {
+    line-height: 1em;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    color: aqua;
+    padding: 40px;
+}
+
+section#Skills {
+    font-size: 1em;
+    text-align: left;
+    padding: 10px;
+}
+
+section#Skills ul {
+    line-height: 1em;
+    color: orange;
+    padding: 5px;
+}
+/* Left Column Styles */
+
+section#leftColumn {
+    clear: left;
+    float: left;
+    width: 50%;
+}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    float: right;
+    width: 50%;
+}
+
+section#leftColumn img {
+    display: block;
+    width: 100%;
+}
+
+
+/* Footer Styles */
+
+footer {
+    color:rebeccapurple;
+    clear: both;
+    font: normal small-caps bold 1em/1em
+        'Trebuchet MS', Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+footer a {
+    color: orangered;
+}
+
+footer time {
+    color: darkcyan;
 }
